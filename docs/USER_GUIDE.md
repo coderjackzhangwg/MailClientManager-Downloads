@@ -38,7 +38,6 @@
 26. [推荐的三种使用流程](#26-推荐的三种使用流程)
 27. [功能限制与兼容性说明](#27-功能限制与兼容性说明)
 28. [常见问题与排查](#28-常见问题与排查)
-29. [维护者如何在 GitHub 更新这份手册](#29-维护者如何在-github-更新这份手册)
 
 ---
 
@@ -862,18 +861,6 @@ A：核对当前版本号、目标 GitHub Release 是否已公开、Beta 开关�
 
 **Q16：能否把完整源码和我的邮箱备份上传 GitHub 来求助？**  
 A：不建议。公开 Issue 只分享必要的**脱敏错误内容**，不上传完整 EML、数据库、密码或企业内部资料；当前私人源码也不应作为普通安装资产公开。
-
-## 29. 维护者如何在 GitHub 更新这份手册
-
-本章节供**软件发行者**使用，不影响普通用户邮件。
-
-1. 登录公开下载仓库：<https://github.com/coderjackzhangwg/MailClientManager-Downloads>。
-2. 如果仓库已有 `docs/USER_GUIDE.md`，进入该文件并选择编辑；如不存在，使用 **Add file → Create new file**，将文件名设为 `docs/USER_GUIDE.md`。
-3. 将本手册完整内容粘贴进去，预览 Markdown 的中文、表格、代码块和目录链接。
-4. Commit changes。更新说明文件本身**不会触发已安装客户端升级**。
-5. 仓库根目录 `README.md` 建议链接到 `docs/USER_GUIDE.md`，并指向官方 Releases 页面。
-6. 另外准备 `v0.9.10` Release 更新公告，填写 GitHub Release 的 **Describe this release**；软件“软件更新”页面会读取公开 Release 的正文。
-7. 不要把私人源码、`.venv`、SQLite、真实 EML、凭据或日志放进公开仓库。
 
 ---
 
